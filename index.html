@@ -7,6 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Order summary card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,23 +17,36 @@
   </style>
 </head>
 <body>
+  <main class="w-1440 h-screen flex justify-center items-center bg-[url('/images/pattern-background-desktop.svg')] ">
+    <div class="content w-96 flex-col border-2 border-black rounded-2xl bg-white">
+      <div class="main-img">
+        <img src="/images/illustration-hero.svg" alt="main-img" class="rounded-t-xl">
+      </div>
+      <h2 class="title text-center pt-6 font-bold text-2xl ">Order Summary</h2>
+      <p class="sub-text w-11/12 mx-auto text-center pt-6 text-gray-400">You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!
+      </p>
+      <div class="plan-details w-10/12 mx-auto mt-6 flex items-center justify-between rounded-xl bg-blue-50">
+        <div class="left w-3/5 flex items-center justify-start  pt-3 pb-3 ml-3">
+          <img src="/images/icon-music.svg" alt="icon-music" class="pl-2">
+          <div class="plan p-2">
+            <h3 class="paln-name font-bold">Annual Plan</h3>
+            <p class="price text-gray-400">$59.99/year</p>
+          </div>
+        </div>
+        <a href="#" class="change pr-3 text-blue-600 hover:text-purple-500">Change</a>
+      </div>
+      <button class="payment w-10/12 text-white text-center font-bold flex justify-center mx-auto mt-8 bg-blue-600 py-4 px-10 rounded-xl shadow-blue-500/50 shadow-lg hover:bg-purple-500 hover:shadow-purple-500/50 shadow-lg" >Proceed to payment</button>
+      <p class="cancel text-center mt-5 mb-8 text-gray-400 hover:text-black"><a href="#">Cancel Order</a></p>
 
-  Order Summary
+    </div>
+  </main>
+ 
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
